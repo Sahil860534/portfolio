@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, Printer, FileText, Mail, MapPin } from 'lucide-react';
 import { GithubIcon } from './Icons';
-import { personalInfo, experienceTimeline, educationData, projectsData } from '../data/portfolioData';
+import { personalInfo, experienceData, educationData, projectsData } from '../data/portfolioData';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -44,19 +44,19 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       />
 
       {/* Modal Container */}
-      <div className="relative w-full max-w-4xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden z-10 text-left max-h-[92vh] flex flex-col">
+      <div className="relative w-full max-w-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden z-10 text-left max-h-[90vh] flex flex-col">
         {/* Header Controls */}
         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex items-center justify-between gap-4 shrink-0">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
               <FileText className="w-4 h-4" />
             </div>
             <div>
-              <h3 id="resume-modal-title" className="text-base font-bold text-slate-900 dark:text-white">
-                Sahil Rane — Curriculum Vitae
+              <h3 id="resume-modal-title" className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                Sahil Rane — Resume Summary
               </h3>
               <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                ATS-Optimized Developer Resume Summary
+                Fresher Software Developer • 2025 Graduate
               </p>
             </div>
           </div>
@@ -65,7 +65,6 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <button
               onClick={handlePrint}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-200/80 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors"
-              title="Print or Save as PDF"
             >
               <Printer className="w-3.5 h-3.5" />
               <span>Print / Save PDF</span>
@@ -82,41 +81,29 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         </div>
 
         {/* Scrollable Printable Document */}
-        <div className="p-6 sm:p-10 space-y-8 overflow-y-auto font-sans bg-white text-slate-900">
+        <div className="p-6 sm:p-8 space-y-6 overflow-y-auto font-sans bg-white text-slate-900 text-xs sm:text-sm">
           {/* Resume Header */}
-          <div className="border-b-2 border-indigo-600 pb-5">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          <div className="border-b-2 border-indigo-600 pb-4">
+            <h1 className="text-2xl font-extrabold text-slate-900">
               {personalInfo.name}
             </h1>
-            <p className="text-sm font-semibold text-indigo-700 mt-0.5">
-              Software Developer | .NET Developer | Python & AI Enthusiast
+            <p className="text-xs sm:text-sm font-semibold text-indigo-700 mt-0.5">
+              {personalInfo.roleTitle}
             </p>
-            <div className="flex flex-wrap gap-4 text-xs text-slate-600 mt-3">
+            <div className="flex flex-wrap gap-4 text-xs text-slate-600 mt-2">
               <span className="flex items-center gap-1">
-                <Mail className="w-3.5 h-3.5 text-indigo-600" />
+                <Mail className="w-3 h-3 text-indigo-600" />
                 {personalInfo.email}
               </span>
               <span className="flex items-center gap-1">
-                <GithubIcon className="w-3.5 h-3.5 text-indigo-600" />
+                <GithubIcon className="w-3 h-3 text-indigo-600" />
                 github.com/Sahil860534
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-indigo-600" />
+                <MapPin className="w-3 h-3 text-indigo-600" />
                 {personalInfo.location}
               </span>
             </div>
-          </div>
-
-          {/* Professional Summary */}
-          <div>
-            <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
-              Professional Summary
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-              Information Technology engineer (2025 Graduate) with hands-on technical training and internship experience in building 
-              scalable backend APIs with C# / ASP.NET Core, Python automation tools, and agentic AI architectures using LangGraph and ChromaDB. 
-              Eager to apply clean coding principles, database design, and fast problem-solving in a full-time software engineering role.
-            </p>
           </div>
 
           {/* Education */}
@@ -124,53 +111,26 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
               Education
             </h2>
-            <div className="flex justify-between items-start text-xs sm:text-sm">
+            <div className="flex justify-between items-start">
               <div>
                 <p className="font-bold text-slate-900">{educationData.degree}</p>
-                <p className="text-slate-600">{educationData.institution}, Pune</p>
+                <p className="text-slate-600">{educationData.institution}</p>
               </div>
-              <span className="font-semibold text-indigo-700">{educationData.year}</span>
+              <span className="font-semibold text-indigo-700">{educationData.period}</span>
             </div>
             <p className="text-[11px] text-slate-500 mt-1">
-              Coursework: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Computer Networks, Software Engineering.
+              Coursework: {educationData.coursework.join(', ')}
             </p>
-          </div>
-
-          {/* Technical Skills Summary */}
-          <div>
-            <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
-              Technical Skills
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              <p>
-                <strong className="text-slate-800">Programming Languages:</strong> C#, Python, JavaScript, SQL
-              </p>
-              <p>
-                <strong className="text-slate-800">Backend:</strong> ASP.NET Core Web API, Entity Framework Core, ADO.NET, REST APIs
-              </p>
-              <p>
-                <strong className="text-slate-800">Databases:</strong> SQL Server, MySQL, MongoDB, SQLite
-              </p>
-              <p>
-                <strong className="text-slate-800">AI & Frameworks:</strong> LLMs, LangGraph, LangChain, RAG, Prompt Engineering
-              </p>
-              <p>
-                <strong className="text-slate-800">Frontend:</strong> React.js, HTML5, CSS3, Tailwind CSS
-              </p>
-              <p>
-                <strong className="text-slate-800">Tools & DevOps:</strong> Git, GitHub, Docker, Swagger, Postman, VS Code
-              </p>
-            </div>
           </div>
 
           {/* Experience & Training */}
           <div>
             <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
-              Experience & Specialized Training
+              Experience & Training
             </h2>
-            <div className="space-y-4">
-              {experienceTimeline.map((item) => (
-                <div key={item.id} className="text-xs sm:text-sm">
+            <div className="space-y-3">
+              {experienceData.map((item) => (
+                <div key={item.id}>
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="font-bold text-slate-900">{item.role}</span>
@@ -182,7 +142,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                     <span className="text-slate-500 font-medium text-xs">{item.period}</span>
                   </div>
                   <ul className="list-disc list-inside space-y-1 mt-1 text-slate-600 text-xs pl-1">
-                    {item.achievements.map((ach, aIdx) => (
+                    {item.highlights.map((ach, aIdx) => (
                       <li key={aIdx}>{ach}</li>
                     ))}
                   </ul>
@@ -191,14 +151,14 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </div>
           </div>
 
-          {/* Key Projects */}
+          {/* Projects */}
           <div>
             <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
               Featured Projects
             </h2>
             <div className="space-y-3">
-              {projectsData.slice(0, 3).map((proj) => (
-                <div key={proj.id} className="text-xs sm:text-sm">
+              {projectsData.map((proj) => (
+                <div key={proj.id}>
                   <div className="flex justify-between items-start font-bold text-slate-900">
                     <span>
                       {proj.title} <span className="text-xs font-normal text-slate-500">({proj.technologies.slice(0, 4).join(', ')})</span>
@@ -216,12 +176,12 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
         {/* Modal Bottom Footer Notice */}
         <div className="px-6 py-3 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-between">
-          <span>💡 Tip: Place your finalized PDF in <code>public/Sahil_Rane_Resume.pdf</code> for direct link downloads.</span>
+          <span>💡 PDF direct download link is also available</span>
           <button
             onClick={onClose}
             className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
           >
-            Close Preview
+            Close
           </button>
         </div>
       </div>

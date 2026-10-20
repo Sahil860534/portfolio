@@ -1,63 +1,42 @@
-export type ProjectCategory = 'All' | 'AI & LLMs' | 'Backend & .NET' | 'Web Applications';
+export type ProjectCategory = 'All' | 'Full Stack & .NET' | 'Python & AI';
 
 export interface Project {
   id: string;
   title: string;
   tagline: string;
-  category: ProjectCategory;
+  category: 'Full Stack & .NET' | 'Python & AI';
   shortDescription: string;
   problem: string;
   solution: string;
   technologies: string[];
   keyFeatures: string[];
   myContribution: string[];
-  challengesAndLearnings: string[];
-  githubUrl: string; // Clearly marked if placeholder or real
+  githubUrl: string;
   demoUrl?: string;
   featured: boolean;
-  architectureHighlights?: string[];
-  screenshotNote?: string;
+  isLiveGithub?: boolean;
 }
 
-export interface SkillItem {
-  name: string;
-  levelBadge?: string;
-}
-
-export interface SkillCategory {
-  id: string;
+export interface SkillGroup {
   title: string;
-  icon: string;
-  description: string;
-  skills: SkillItem[];
+  skills: string[];
 }
 
 export interface ExperienceItem {
   id: string;
   role: string;
   company: string;
-  type: 'Training' | 'Internship' | 'Project Trainee';
+  type: 'Training' | 'Internship';
   period: string;
-  location: string;
   description: string;
-  achievements: string[];
-  skillsGained: string[];
+  highlights: string[];
+  technologies: string[];
 }
 
 export interface EducationItem {
   degree: string;
   institution: string;
   location: string;
-  year: string;
-  status: string;
-  highlights: string[];
-  relevantCoursework: string[];
-}
-
-export interface AchievementItem {
-  id: string;
-  title: string;
-  category: 'Hackathon' | 'Upskilling' | 'Interests';
-  description: string;
-  icon: string;
+  period: string;
+  coursework: string[];
 }

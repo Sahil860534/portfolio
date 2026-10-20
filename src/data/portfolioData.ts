@@ -94,24 +94,26 @@ export const projectsData: Project[] = [
   {
     id: "beast-assistant",
     title: "Intelligent Virtual Assistant (BEAST)",
-    tagline: "Voice & Text Desktop Assistant with NLP & SQL Logging",
+    tagline: "Voice-Activated Desktop Assistant with SpeechRecognition & Offline TTS",
     category: "Python & AI",
-    shortDescription: "A Python desktop assistant that takes natural language voice and text commands to automate routine computer tasks and log queries in a local database.",
-    problem: "Repetitive desktop actions like opening applications, searching local notes, or managing quick reminders require frequent manual context switching.",
-    solution: "Built a modular Python desktop assistant combining speech recognition, intent matching, speech synthesis, and SQLite database logging.",
-    technologies: ["Python", "Speech Recognition", "pyttsx3", "SQLite", "NLP Basics"],
+    shortDescription: "A Python desktop virtual assistant that captures microphone input, recognizes spoken voice commands via Google Speech Recognition, and executes web navigation & desktop automation with speech synthesis.",
+    problem: "Navigating between browsers, searching platforms, and triggering repetitive desktop tasks often interrupts developer workflow and manual focus.",
+    solution: "Developed an autonomous Python desktop assistant combining continuous microphone listening, wake-word activation, intent parsing, and natural speech synthesis feedback.",
+    technologies: ["Python", "SpeechRecognition", "pyttsx3", "Web Automation", "Google Speech API"],
     keyFeatures: [
-      "Voice and text command input with natural speech synthesis responses",
-      "Intent parser dispatching commands to specific system automation modules",
-      "SQLite database to maintain command history, reminders, and activity logs"
+      "Continuous ambient microphone listening with wake-word activation ('Beast')",
+      "Offline natural text-to-speech responses using pyttsx3",
+      "Automated web navigation for Google, YouTube, LinkedIn, and developer platforms",
+      "Modular command dispatcher architecture extensible for Generative AI and API integrations"
     ],
     myContribution: [
-      "Developed the command execution dispatcher and keyword/intent matching logic in Python",
-      "Designed the SQLite database schema for storing user tasks, notes, and command history"
+      "Engineered the audio listening loop and wake-word trigger mechanism using SpeechRecognition",
+      "Implemented the intent classification and desktop web automation handlers in Python",
+      "Integrated pyttsx3 text-to-speech synthesis for responsive voice feedback"
     ],
-    githubUrl: "https://github.com/Sahil860534", // [Replace with specific repo if pushed separately]
-    featured: false,
-    isLiveGithub: false
+    githubUrl: "https://github.com/Sahil860534/R-project/tree/main/BEAST-main",
+    featured: true,
+    isLiveGithub: true
   }
 ];
 

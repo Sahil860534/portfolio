@@ -174,7 +174,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <span className="text-emerald-300">"Python"</span>, <span className="text-emerald-300">"SQL Server"</span> &#125;,
               </p>
               <p className="pl-4">
-                Training = <span className="text-emerald-300">"Revature (.NET) & Hyper Serve (AI)"</span>,
+                Training = <span className="text-emerald-300">"Revature (.NET Full Stack)"</span>,
               </p>
               <p className="pl-4">
                 OpenToOpportunities = <span className="text-indigo-400">true</span>

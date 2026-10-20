@@ -26,9 +26,8 @@ export const About: React.FC = () => {
 
           <p>
             My main technical focus is on <strong>C# / ASP.NET Core Web API</strong> and <strong>Python</strong>. Through intensive .NET training 
-            at <strong>Revature</strong>, I gained experience with Entity Framework Core, SQL Server, and RESTful API architecture. 
-            At <strong>Hyper Serve AI Solutions</strong>, I worked on hands-on AI projects experimenting with LangGraph multi-agent workflows 
-            and ChromaDB vector retrieval.
+            at <strong>Revature</strong>, I gained experience with Entity Framework Core, SQL Server, and RESTful API architecture, while also 
+            building hands-on projects with modern Python and AI libraries.
           </p>
 
           <p>

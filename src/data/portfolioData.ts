@@ -131,20 +131,6 @@ export const experienceData: ExperienceItem[] = [
     technologies: ["C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "REST APIs"]
   },
   {
-    id: "hyper-serve",
-    role: "Research & Development Intern",
-    company: "Hyper Serve AI Solutions",
-    type: "Internship",
-    period: "2024 - 2025",
-    description: "Hands-on internship working on practical AI workflows, agent architectures, and LLM integrations.",
-    highlights: [
-      "Explored multi-agent frameworks like LangGraph and LangChain for business automation tasks",
-      "Worked with vector embeddings and ChromaDB for retrieval-augmented generation (RAG)",
-      "Tested prompt engineering techniques and structured outputs using Pydantic"
-    ],
-    technologies: ["Python", "LangGraph", "LangChain", "ChromaDB", "Prompt Engineering"]
-  },
-  {
     id: "ibm-skillsbuild",
     role: "AI & Cloud Project Trainee",
     company: "IBM SkillsBuild",

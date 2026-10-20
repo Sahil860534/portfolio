@@ -6,7 +6,7 @@ export const About: React.FC = () => {
     <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       {/* Section Header */}
       <div className="text-center mb-10 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800">
           <Sparkles className="w-3.5 h-3.5" />
           <span>About Me</span>
         </div>
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
         {/* 3 Quick Fresher Fact Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200 dark:border-slate-800">
           <div className="p-4 rounded-xl bg-slate-100/70 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 space-y-1">
-            <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs">
+            <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold text-xs">
               <GraduationCap className="w-4 h-4" />
               <span>B.E. IT (2025 Batch)</span>
             </div>
@@ -49,7 +49,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-slate-100/70 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 space-y-1">
-            <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs">
+            <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold text-xs">
               <Code2 className="w-4 h-4" />
               <span>Backend & .NET Stack</span>
             </div>
@@ -59,7 +59,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-slate-100/70 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 space-y-1">
-            <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs">
+            <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold text-xs">
               <BookOpen className="w-4 h-4" />
               <span>Hands-on Projects</span>
             </div>

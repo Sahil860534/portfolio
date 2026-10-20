@@ -59,14 +59,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
         {/* Brand Logo */}
         <a
           href="#"
-          className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg p-1"
+          className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 rounded-lg p-1"
           aria-label="Sahil Rane Portfolio Home"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center text-white font-bold text-base shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-600 via-cyan-500 to-emerald-500 flex items-center justify-center text-white font-bold text-base shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-200">
             SR
           </div>
           <div className="flex flex-col text-left">
-            <span className="font-bold text-slate-900 dark:text-white text-base tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            <span className="font-bold text-slate-900 dark:text-white text-base tracking-tight group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
               {personalInfo.name}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
                 href={link.href}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
                   isActive
-                    ? 'bg-indigo-600 text-white shadow-sm'
+                    ? 'bg-teal-600 text-white shadow-sm'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/50 dark:hover:bg-slate-700/50'
                 }`}
               >
@@ -99,19 +99,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
         <div className="hidden md:flex items-center gap-3">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-200/60 dark:bg-slate-800/80 border border-slate-300/60 dark:border-slate-700/60 hover:bg-slate-300/60 dark:hover:bg-slate-700/80 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+            className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-200/60 dark:bg-slate-800/80 border border-slate-300/60 dark:border-slate-700/60 hover:bg-slate-300/60 dark:hover:bg-slate-700/80 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
             {theme === 'dark' ? (
               <Sun className="w-4 h-4 text-amber-400 animate-fade-in" />
             ) : (
-              <Moon className="w-4 h-4 text-indigo-600 animate-fade-in" />
+              <Moon className="w-4 h-4 text-teal-600 animate-fade-in" />
             )}
           </button>
 
           <button
             onClick={onOpenResume}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/30 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 shadow-md shadow-teal-600/20 hover:shadow-teal-600/30 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
           >
             <FileText className="w-3.5 h-3.5" />
             <span>Resume</span>
@@ -128,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             {theme === 'dark' ? (
               <Sun className="w-4 h-4 text-amber-400" />
             ) : (
-              <Moon className="w-4 h-4 text-indigo-600" />
+              <Moon className="w-4 h-4 text-teal-600" />
             )}
           </button>
 
@@ -152,7 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-teal-50 dark:hover:bg-teal-950/40 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
               >
                 {link.name}
               </a>
@@ -164,7 +164,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
                 setMobileMenuOpen(false);
                 onOpenResume();
               }}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 shadow-md shadow-teal-600/20"
             >
               <FileText className="w-4 h-4" />
               <span>View & Download Resume</span>

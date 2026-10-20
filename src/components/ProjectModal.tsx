@@ -44,7 +44,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         {/* Header */}
         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-950 flex items-start justify-between gap-4 shrink-0">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">
               {project.category}
             </span>
             <h3 id="modal-project-title" className="text-xl font-bold text-slate-900 dark:text-white mt-0.5">
@@ -97,7 +97,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* Solution */}
           <div className="space-y-1.5">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-              <Layers className="w-3.5 h-3.5 text-indigo-500" />
+              <Layers className="w-3.5 h-3.5 text-teal-500" />
               <span>Solution & How It Works</span>
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -161,7 +161,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-all"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 shadow-md shadow-teal-600/20 transition-all"
             >
               <GithubIcon className="w-4 h-4" />
               <span>View on GitHub</span>

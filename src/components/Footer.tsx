@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         {/* Brand & Brief */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-teal-600 to-cyan-500 text-white flex items-center justify-center font-bold text-xs">
               SR
             </div>
             <span className="font-bold text-slate-900 dark:text-white text-base">
@@ -28,22 +28,22 @@ export const Footer: React.FC = () => {
 
         {/* Quick Nav Links */}
         <div className="flex flex-wrap justify-center gap-6 text-xs font-medium text-slate-600 dark:text-slate-400">
-          <a href="#about" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#about" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             About
           </a>
-          <a href="#skills" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#skills" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             Skills
           </a>
-          <a href="#projects" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#projects" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             Projects
           </a>
-          <a href="#experience" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#experience" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             Experience
           </a>
-          <a href="#education" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#education" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             Education
           </a>
-          <a href="#contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <a href="#contact" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
             Contact
           </a>
         </div>
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
             href={personalInfo.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
             aria-label="GitHub Profile"
           >
             <GithubIcon className="w-4 h-4" />
@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
             href={personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
             aria-label="LinkedIn Profile"
           >
             <LinkedinIcon className="w-4 h-4" />
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
 
           <a
             href={`mailto:${personalInfo.email}`}
-            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="p-2 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
             aria-label="Email Sahil Rane"
           >
             <Mail className="w-4 h-4" />
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
 
           <button
             onClick={scrollToTop}
-            className="p-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-500 shadow-sm transition-all"
+            className="p-2 rounded-xl bg-gradient-to-tr from-teal-600 to-cyan-500 text-white hover:from-teal-500 hover:to-cyan-400 shadow-md shadow-teal-600/20 transition-all"
             aria-label="Back to top"
             title="Scroll to top"
           >

@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
     >
       {/* Subtle ambient blur */}
       <div 
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[300px] bg-indigo-500/10 dark:bg-indigo-600/15 blur-[120px] rounded-full pointer-events-none -z-10" 
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[300px] bg-teal-500/10 dark:bg-cyan-500/15 blur-[120px] rounded-full pointer-events-none -z-10" 
         aria-hidden="true" 
       />
 
@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
           {/* Heading */}
           <div className="space-y-2">
-            <h2 className="text-base sm:text-lg font-semibold text-indigo-600 dark:text-indigo-400">
+            <h2 className="text-base sm:text-lg font-semibold text-teal-600 dark:text-teal-400">
               Hi, I'm Sahil Rane 👋
             </h2>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
@@ -64,11 +64,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           {/* Key Quick Facts */}
           <div className="flex flex-wrap gap-4 text-xs text-slate-500 dark:text-slate-400 pt-1">
             <span className="flex items-center gap-1.5 font-medium">
-              <GraduationCap className="w-4 h-4 text-indigo-500" />
+              <GraduationCap className="w-4 h-4 text-teal-500" />
               SKNCOE Pune (2025)
             </span>
             <span className="flex items-center gap-1.5 font-medium">
-              <MapPin className="w-4 h-4 text-indigo-500" />
+              <MapPin className="w-4 h-4 text-teal-500" />
               Pune, India (Open to Relocate)
             </span>
           </div>
@@ -77,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/20 active:scale-95 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 shadow-md shadow-teal-600/20 active:scale-95 transition-all"
             >
               <span>View My Projects</span>
               <ArrowRight className="w-4 h-4" />
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               onClick={onOpenResume}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/80 shadow-sm transition-all active:scale-95"
             >
-              <FileText className="w-4 h-4 text-indigo-500" />
+              <FileText className="w-4 h-4 text-teal-500" />
               <span>View Resume</span>
             </button>
           </div>
@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 border border-slate-200 dark:border-slate-700 transition-all hover:scale-105"
+              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 border border-slate-200 dark:border-slate-700 transition-all hover:scale-105"
               aria-label="GitHub Profile"
               title="GitHub: Sahil860534"
             >
@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 border border-slate-200 dark:border-slate-700 transition-all hover:scale-105"
+              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 border border-slate-200 dark:border-slate-700 transition-all hover:scale-105"
               aria-label="LinkedIn Profile"
               title="LinkedIn Profile"
             >
@@ -145,7 +145,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
               </div>
               <div className="flex items-center gap-1.5 text-slate-400 text-[11px]">
-                <Terminal className="w-3.5 h-3.5 text-indigo-400" />
+                <Terminal className="w-3.5 h-3.5 text-teal-400" />
                 <span>SahilRane.cs</span>
               </div>
               <span className="text-[10px] text-emerald-400 bg-emerald-950/60 px-1.5 py-0.5 rounded">
@@ -156,7 +156,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             <div className="p-4 space-y-2 text-slate-300 leading-relaxed font-mono">
               <p className="text-slate-500">// Ready to learn, build, and contribute</p>
               <p>
-                <span className="text-indigo-400">var</span> candidate = <span className="text-indigo-400">new</span>{' '}
+                <span className="text-cyan-400">var</span> candidate = <span className="text-cyan-400">new</span>{' '}
                 <span className="text-amber-300">FresherDeveloper</span> &#123;
               </p>
               <p className="pl-4">
@@ -169,7 +169,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 Batch = <span className="text-cyan-300">2025</span>,
               </p>
               <p className="pl-4">
-                Skills = <span className="text-indigo-400">new</span>[] &#123;{' '}
+                Skills = <span className="text-cyan-400">new</span>[] &#123;{' '}
                 <span className="text-emerald-300">"C#"</span>, <span className="text-emerald-300">"ASP.NET Core"</span>,{' '}
                 <span className="text-emerald-300">"Python"</span>, <span className="text-emerald-300">"SQL Server"</span> &#125;,
               </p>
@@ -177,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 Training = <span className="text-emerald-300">"Revature (.NET Full Stack)"</span>,
               </p>
               <p className="pl-4">
-                OpenToOpportunities = <span className="text-indigo-400">true</span>
+                OpenToOpportunities = <span className="text-cyan-400">true</span>
               </p>
               <p>&#125;;</p>
             </div>

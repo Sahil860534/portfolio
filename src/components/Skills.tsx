@@ -24,7 +24,7 @@ export const Skills: React.FC = () => {
     <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       {/* Header */}
       <div className="text-center mb-10 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800">
           <Sparkles className="w-3.5 h-3.5" />
           <span>Technical Skills</span>
         </div>
@@ -43,10 +43,10 @@ export const Skills: React.FC = () => {
           return (
             <div
               key={index}
-              className="glass-card p-5 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200"
+              className="glass-card p-5 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-teal-500/40 dark:hover:border-teal-500/40 transition-all duration-200"
             >
               <div className="flex items-center gap-2.5 mb-3">
-                <div className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60">
+                <div className="p-2 rounded-lg bg-teal-50 dark:bg-teal-950/80 text-teal-600 dark:text-teal-400 border border-teal-200/60 dark:border-teal-800/60">
                   <Icon className="w-4 h-4" />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">

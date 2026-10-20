@@ -48,7 +48,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Header Controls */}
         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex items-center justify-between gap-4 shrink-0">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-teal-600 to-cyan-500 text-white flex items-center justify-center font-bold text-xs">
               <FileText className="w-4 h-4" />
             </div>
             <div>
@@ -83,24 +83,24 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Scrollable Printable Document */}
         <div className="p-6 sm:p-8 space-y-6 overflow-y-auto font-sans bg-white text-slate-900 text-xs sm:text-sm">
           {/* Resume Header */}
-          <div className="border-b-2 border-indigo-600 pb-4">
+          <div className="border-b-2 border-teal-600 pb-4">
             <h1 className="text-2xl font-extrabold text-slate-900">
               {personalInfo.name}
             </h1>
-            <p className="text-xs sm:text-sm font-semibold text-indigo-700 mt-0.5">
+            <p className="text-xs sm:text-sm font-semibold text-teal-700 mt-0.5">
               {personalInfo.roleTitle}
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-slate-600 mt-2">
               <span className="flex items-center gap-1">
-                <Mail className="w-3 h-3 text-indigo-600" />
+                <Mail className="w-3 h-3 text-teal-600" />
                 {personalInfo.email}
               </span>
               <span className="flex items-center gap-1">
-                <GithubIcon className="w-3 h-3 text-indigo-600" />
+                <GithubIcon className="w-3 h-3 text-teal-600" />
                 github.com/Sahil860534
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="w-3 h-3 text-indigo-600" />
+                <MapPin className="w-3 h-3 text-teal-600" />
                 {personalInfo.location}
               </span>
             </div>
@@ -108,7 +108,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Education */}
           <div>
-            <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
+            <h2 className="text-xs font-bold uppercase tracking-wider text-teal-800 border-b border-slate-200 pb-1 mb-2">
               Education
             </h2>
             <div className="flex justify-between items-start">
@@ -116,7 +116,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 <p className="font-bold text-slate-900">{educationData.degree}</p>
                 <p className="text-slate-600">{educationData.institution}</p>
               </div>
-              <span className="font-semibold text-indigo-700">{educationData.period}</span>
+              <span className="font-semibold text-teal-700">{educationData.period}</span>
             </div>
             <p className="text-[11px] text-slate-500 mt-1">
               Coursework: {educationData.coursework.join(', ')}
@@ -125,7 +125,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Experience & Training */}
           <div>
-            <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
+            <h2 className="text-xs font-bold uppercase tracking-wider text-teal-800 border-b border-slate-200 pb-1 mb-2">
               Experience & Training
             </h2>
             <div className="space-y-3">
@@ -135,7 +135,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                     <div>
                       <span className="font-bold text-slate-900">{item.role}</span>
                       <span className="text-slate-600"> — {item.company}</span>
-                      <span className="ml-2 text-[10px] font-bold px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">
+                      <span className="ml-2 text-[10px] font-bold px-1.5 py-0.5 rounded bg-teal-50 text-teal-700 border border-teal-200">
                         {item.type}
                       </span>
                     </div>
@@ -153,7 +153,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Projects */}
           <div>
-            <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-800 border-b border-slate-200 pb-1 mb-2">
+            <h2 className="text-xs font-bold uppercase tracking-wider text-teal-800 border-b border-slate-200 pb-1 mb-2">
               Featured Projects
             </h2>
             <div className="space-y-3">
@@ -163,7 +163,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                     <span>
                       {proj.title} <span className="text-xs font-normal text-slate-500">({proj.technologies.slice(0, 4).join(', ')})</span>
                     </span>
-                    <a href={proj.githubUrl} target="_blank" rel="noopener noreferrer" className="text-indigo-600 text-xs font-semibold hover:underline">
+                    <a href={proj.githubUrl} target="_blank" rel="noopener noreferrer" className="text-teal-600 text-xs font-semibold hover:underline">
                       GitHub
                     </a>
                   </div>
@@ -179,7 +179,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <span>💡 PDF direct download link is also available</span>
           <button
             onClick={onClose}
-            className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+            className="text-xs font-semibold text-teal-600 dark:text-teal-400 hover:underline"
           >
             Close
           </button>

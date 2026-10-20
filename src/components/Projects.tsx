@@ -12,7 +12,7 @@ export const Projects: React.FC = () => {
     <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       {/* Header */}
       <div className="text-center mb-10 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800">
           <Sparkles className="w-3.5 h-3.5" />
           <span>Practical Projects</span>
         </div>
@@ -30,12 +30,12 @@ export const Projects: React.FC = () => {
           return (
             <div
               key={project.id}
-              className="glass-card rounded-2xl p-5 flex flex-col justify-between hover:border-indigo-500/50 dark:hover:border-indigo-500/50 transition-all duration-200 hover:-translate-y-1"
+              className="glass-card rounded-2xl p-5 flex flex-col justify-between hover:border-teal-500/50 dark:hover:border-teal-500/50 transition-all duration-200 hover:-translate-y-1"
             >
               <div>
                 {/* Top Pill & Category */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60">
+                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-950/80 text-teal-600 dark:text-teal-400 border border-teal-200/60 dark:border-teal-800/60">
                     {project.category}
                   </span>
                   {project.isLiveGithub && (
@@ -50,7 +50,7 @@ export const Projects: React.FC = () => {
                 <h3 className="text-base font-bold text-slate-900 dark:text-white">
                   {project.title}
                 </h3>
-                <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium mt-0.5 mb-2.5">
+                <p className="text-xs text-teal-600 dark:text-teal-400 font-medium mt-0.5 mb-2.5">
                   {project.tagline}
                 </p>
 
@@ -81,7 +81,7 @@ export const Projects: React.FC = () => {
               <div className="pt-3 border-t border-slate-200/60 dark:border-slate-800/80 flex items-center justify-between">
                 <button
                   onClick={() => setActiveModalProject(project)}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-teal-600 dark:text-teal-400 hover:text-teal-500"
                 >
                   <span>View Details</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
